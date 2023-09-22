@@ -46,7 +46,8 @@ namespace WPF_Cal
             {
                 MessageBox.Show("Invaild operation");
                 result = 0;
-            } 
+            }
+            if (result == double.PositiveInfinity || result == double.NegativeInfinity) result = 0;
             return result;
             
 
